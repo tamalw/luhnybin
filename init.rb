@@ -4,7 +4,7 @@ require_relative 'lib/luhnybin'
 
 $stdin.each do |test|
   filtered_text = Luhnybin.filter(test)
-	begin
+  begin
     puts filtered_text
     $stdout.flush
   rescue Errno::EPIPE
