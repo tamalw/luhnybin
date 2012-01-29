@@ -107,7 +107,7 @@ public class Main extends TestSuite {
             }
           }
         });
-        
+
         luhnyBinTests.check(in, new TestCase.Listener() {
           public void testPassed(TestCase test) {
             System.out.print('.');

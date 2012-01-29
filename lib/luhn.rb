@@ -1,7 +1,7 @@
 class Integer
   def valid_luhn?
-    digits = [] 
-    
+    digits = []
+
     self.to_s.reverse.chars.each_with_index do |digit, i|
       if i % 2 != 0
         double_digit = (digit.to_i * 2).to_s
@@ -13,8 +13,8 @@ class Integer
         digits << digit
       end
     end
-    
+
     digits.inject(0) { |sum, n| sum + n.to_i } % 10 == 0
   end
-  
+
 end
